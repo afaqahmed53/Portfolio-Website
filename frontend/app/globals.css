@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f3efe6;
+  --ink: #1a1714;
+  --muted: #5e574e;
+  --line: #d8d0c3;
+  --copper: #b85c38;
+  --copper-deep: #8c4324;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-copper: var(--copper);
+  --color-copper-deep: var(--copper-deep);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans), sans-serif;
+}
+
+::selection {
+  background: #efd3c4;
+  color: var(--ink);
+}
+
+@keyframes wordmark-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.brand-lockup {
+  --shimmer-duration: 3.6s;
+}
+
+.brand-lockup:hover {
+  --shimmer-duration: 2.4s;
+}
+
+.brand-lockup .wordmark,
+.brand-lockup .wordmark-role {
+  background-size: 240% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: wordmark-shimmer var(--shimmer-duration) ease-in-out infinite
+    alternate;
+}
+
+.brand-lockup .wordmark {
+  background-image: linear-gradient(
+    105deg,
+    #1a1714 0%,
+    #1a1714 38%,
+    #e8a07a 50%,
+    #b85c38 54%,
+    #1a1714 66%,
+    #1a1714 100%
+  );
+}
+
+.brand-lockup .wordmark-role {
+  background-image: linear-gradient(
+    105deg,
+    #5e574e 0%,
+    #5e574e 36%,
+    #e8a07a 49%,
+    #b85c38 53%,
+    #5e574e 64%,
+    #5e574e 100%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-lockup .wordmark {
+    animation: none;
+    background: none;
+    color: var(--ink);
+  }
+
+  .brand-lockup .wordmark-role {
+    animation: none;
+    background: none;
+    color: var(--copper);
+  }
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--copper);
+  outline-offset: 3px;
+}
