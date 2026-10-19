@@ -13,9 +13,6 @@ export function CopyEmail() {
       window.setTimeout(() => setCopied(false), 2000);
     } catch {
       setCopied(false);
-      alert("Failed to copy email. Please try again.");
-      console.error("Failed to copy email. Please try again.");
-      console.log(error);
     }
   }
 
