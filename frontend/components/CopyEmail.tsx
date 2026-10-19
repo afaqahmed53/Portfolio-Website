@@ -14,6 +14,7 @@ export function CopyEmail() {
     } catch {
       setCopied(false);
       alert("Failed to copy email. Please try again.");
+      console.error("Failed to copy email. Please try again.");
     }
   }
 
