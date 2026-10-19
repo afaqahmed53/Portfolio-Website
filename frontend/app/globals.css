@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --paper: #f3efe6;
-  --ink: #1a1714;
-  --muted: #5e574e;
-  --line: #d8d0c3;
-  --copper: #b85c38;
-  --copper-deep: #8c4324;
+  --paper: #f4f1ea;
+  --ink: #141414;
+  --muted: #5c564f;
+  --line: #d9d4cb;
+  --forest: #1b4a38;
+  --forest-deep: #123528;
 }
 
 @theme inline {
@@ -14,93 +14,209 @@
   --color-ink: var(--ink);
   --color-muted: var(--muted);
   --color-line: var(--line);
-  --color-copper: var(--copper);
-  --color-copper-deep: var(--copper-deep);
+  --color-forest: var(--forest);
+  --color-forest-deep: var(--forest-deep);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-display: var(--font-display);
 }
 
+html {
+  scroll-padding-top: 7.5rem;
+  scroll-padding-bottom: 6.5rem;
+}
+
 body {
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--font-sans), sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 ::selection {
-  background: #efd3c4;
+  background: #cfe0d8;
   color: var(--ink);
-}
-
-@keyframes wordmark-shimmer {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
-.brand-lockup {
-  --shimmer-duration: 3.6s;
-}
-
-.brand-lockup:hover {
-  --shimmer-duration: 2.4s;
-}
-
-.brand-lockup .wordmark,
-.brand-lockup .wordmark-role {
-  background-size: 240% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: wordmark-shimmer var(--shimmer-duration) ease-in-out infinite
-    alternate;
-}
-
-.brand-lockup .wordmark {
-  background-image: linear-gradient(
-    105deg,
-    #1a1714 0%,
-    #1a1714 38%,
-    #e8a07a 50%,
-    #b85c38 54%,
-    #1a1714 66%,
-    #1a1714 100%
-  );
-}
-
-.brand-lockup .wordmark-role {
-  background-image: linear-gradient(
-    105deg,
-    #5e574e 0%,
-    #5e574e 36%,
-    #e8a07a 49%,
-    #b85c38 53%,
-    #5e574e 64%,
-    #5e574e 100%
-  );
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .brand-lockup .wordmark {
-    animation: none;
-    background: none;
-    color: var(--ink);
-  }
-
-  .brand-lockup .wordmark-role {
-    animation: none;
-    background: none;
-    color: var(--copper);
-  }
 }
 
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid var(--copper);
+  outline: 2px solid var(--forest);
   outline-offset: 3px;
+}
+
+.site-header {
+  box-shadow: 0 10px 28px rgba(20, 20, 20, 0.05);
+}
+
+.nav-link {
+  position: relative;
+  transition: color 180ms ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  left: 0;
+  height: 1px;
+  background: var(--forest);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 220ms ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.surface-card {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    background-color 220ms ease;
+}
+
+.surface-card:hover {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(20, 20, 20, 0.07);
+}
+
+.row-link {
+  border-radius: 0.75rem;
+  transition:
+    background-color 200ms ease,
+    box-shadow 200ms ease,
+    color 200ms ease;
+}
+
+.row-link:hover {
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(20, 20, 20, 0.06);
+}
+
+.faq-trigger {
+  margin-inline: -0.75rem;
+  border-radius: 0.85rem;
+  padding-inline: 0.75rem;
+  transition:
+    background-color 200ms ease,
+    box-shadow 200ms ease,
+    color 200ms ease;
+}
+
+.faq-trigger:hover {
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(20, 20, 20, 0.07);
+}
+
+.faq-mark {
+  display: grid;
+  width: 1.75rem;
+  height: 1.75rem;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  transition:
+    transform 220ms ease,
+    color 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.faq-trigger:hover .faq-mark {
+  color: var(--forest);
+  border-color: var(--forest);
+  transform: scale(1.06);
+  box-shadow: 0 6px 16px rgba(27, 74, 56, 0.16);
+}
+
+.faq-trigger[aria-expanded="true"] .faq-mark,
+.faq-trigger[aria-expanded="true"]:hover .faq-mark {
+  color: #fff;
+  background: var(--forest);
+  border-color: transparent;
+  transform: none;
+}
+
+.faq-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 280ms ease;
+}
+
+.faq-panel[data-open="true"] {
+  grid-template-rows: 1fr;
+}
+
+.faq-panel > div {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.btn-solid,
+.btn-ghost,
+.chip,
+.field {
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.btn-solid {
+  box-shadow: 0 8px 18px rgba(27, 74, 56, 0.18);
+}
+
+.btn-solid:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(27, 74, 56, 0.26);
+}
+
+.btn-ghost:hover,
+.chip:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(20, 20, 20, 0.08);
+}
+
+.field:hover {
+  border-color: #b7c7bf;
+}
+
+.field:focus {
+  border-color: var(--forest);
+  box-shadow: 0 0 0 4px rgba(27, 74, 56, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .surface-card,
+  .row-link,
+  .faq-trigger,
+  .faq-mark,
+  .faq-panel,
+  .btn-solid,
+  .btn-ghost,
+  .chip,
+  .nav-link::after {
+    transition: none;
+  }
+
+  .surface-card:hover,
+  .btn-solid:hover,
+  .btn-ghost:hover,
+  .chip:hover,
+  .faq-trigger:hover .faq-mark {
+    transform: none;
+  }
 }

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
-import { SiteFooter } from "@/components/SiteFooter";
-import { SiteHeader } from "@/components/SiteHeader";
+import { Geist, Geist_Mono, Newsreader } from "next/font/google";
+import { ProfileHeader } from "@/components/ProfileHeader";
+import { QuickActions } from "@/components/QuickActions";
+import { site } from "@/lib/content";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,31 +15,44 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const display = Instrument_Serif({
+const display = Newsreader({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: "400",
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "Afaq Ahmed — Data and AI Engineer",
-    template: "%s — Afaq Ahmed",
+    default: `${site.name} | ${site.title}`,
+    template: `%s | ${site.name}`,
   },
-  description:
-    "Portfolio of Afaq Ahmed, a data and AI engineer in Espoo. Pipelines, warehouses, Power BI, and applied machine learning.",
+  description: site.bio,
+  openGraph: {
+    title: `${site.name} | ${site.title}`,
+    description: site.bio,
+    type: "website",
+    locale: "en_US",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${display.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${display.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="flex min-h-full flex-col">
-        <SiteHeader />
-        <main className="flex-1">{children}</main>
-        <SiteFooter />
+      <body className="flex min-h-full flex-col pb-24">
+        <a
+          href="#content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[60] focus:bg-white focus:px-3 focus:py-2"
+        >
+          Skip to content
+        </a>
+        <ProfileHeader />
+        <main id="content" className="flex-1">
+          {children}
+        </main>
+        <QuickActions />
       </body>
     </html>
   );
