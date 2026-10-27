@@ -1,11 +1,11 @@
 export const site = {
   name: "Afaq Ahmed",
-  title: "Data & AI Engineer",
+  title: "Experienced Data Engineer",
   tagline:
-    "DATA & AI ENGINEER · PIPELINES · WAREHOUSES · ANALYTICS · APPLIED ML",
+    "DATA ENGINEER · PIPELINES · WAREHOUSES · ANALYTICS · BI · APPLIED ML",
   headline:
-    "Data and AI engineering for teams that need a number they can defend.",
-  bio: "Pipelines, warehouses, and Power BI for education, construction, and product sales — with machine learning when the decision needs a model. Based in Espoo.",
+    "Data engineering for teams that need a number they can defend.",
+  bio: "ETL/ELT pipelines, warehouses, and Power BI across education, construction, and retail — with applied machine learning from master’s research. Based in Espoo.",
   timezone: "EET · UTC+2 · remote-friendly",
   email: "iafaqhere1@gmail.com",
   phone: "+358 41 7235431",
@@ -13,7 +13,101 @@ export const site = {
   location: "Espoo, Finland",
   resumePath: "/resume.pdf",
   resumeDownloadName: "Afaq-Ahmed-Resume.pdf",
+  /** Mirrors the “Quick Summary” on the downloadable resume. */
+  resumeSummary:
+    "Dedicated and results-driven analytics professional with experience in the Education, construction, and Retail industries, seeking a role to leverage analytical skills and contribute to the organization’s growth and success by developing pipelines and insightful reporting.",
 };
+
+/** Extra CV lines not shown elsewhere on the site (empty = explicitly none listed). */
+export const cvExtras = {
+  certifications: [] as const,
+  spokenLanguages: [] as const,
+};
+
+/**
+ * Plain-text sections extracted from the downloadable resume PDF (for RAG).
+ * Update when `Afaq Ahmed - Resume-1.pdf` changes, then `npm run sync:data`.
+ */
+export const resumeDocument = {
+  sourcePdf: "Afaq Ahmed - Resume-1.pdf",
+  lastUpdated: "September 2026",
+  sections: [
+    {
+      id: "profile",
+      title: "Resume — profile & contact",
+      text: [
+        "Afaq Ahmed — Experienced Data Engineer",
+        "Espoo, Finland",
+        "iafaqhere1@gmail.com",
+        "+358 41 7235431",
+        "LinkedIn profile on resume",
+        "Last updated: September 2026",
+      ].join("\n"),
+    },
+    {
+      id: "quick-summary",
+      title: "Resume — Quick Summary",
+      text: site.resumeSummary,
+    },
+    {
+      id: "skillset",
+      title: "Resume — Skillset",
+      text:
+        "Technical skills: Data Engineering (5 years of project experience), Python, PySpark, SQL, ETL/ELT, Dimensional Data Modeling, dbt, Data Quality, Microsoft Fabric, Azure Data Factory, Databricks, Apache Spark, Apache Airflow, Medallion Architecture, Power BI, Tableau, Google BigQuery (basic familiarity), Git, Azure DevOps, CI/CD, Docker, Agile Methodology.",
+    },
+    {
+      id: "experience-sst",
+      title: "Resume — Smart Solutions Technologies (SST)",
+      text: [
+        "Smart Solutions Technologies (SST) — Data Engineer",
+        "May 2025 – Aug 2026 · Remote · Melbourne, Australia",
+        "Developed and maintained ETL/ELT pipelines using Python and SQL to integrate data from multiple sources and prepare reliable datasets for reporting and analysis.",
+        "Implemented data cleaning, transformation, and validation processes to improve data quality, consistency, and reliability across data workflows.",
+        "Conducted SQL-based data analysis and prepared reports to identify operational trends, monitor performance metrics, and support data-driven business decisions.",
+      ].join("\n"),
+    },
+    {
+      id: "experience-uef",
+      title: "Resume — University of Eastern Finland",
+      text: [
+        "University of Eastern Finland — Research Fellow Assistant · Data Engineer",
+        "Nov 2022 – Mar 2025 · Joensuu, Finland",
+        "Developed Python, PySpark, and SQL data pipelines processing 5M+ student records, reducing manual processing time by 60%.",
+        "Designed dimensional data models and Power BI dashboards, improving query performance by 45% and reducing reporting time from hours to minutes.",
+        "Built automated data-quality checks and anomaly detection scripts, reducing investigation time by 40% and improving pipeline reliability.",
+      ].join("\n"),
+    },
+    {
+      id: "experience-gagamuller",
+      title: "Resume — GagaMuller",
+      text: [
+        "GagaMuller — Data Engineer",
+        "Sep 2022 – Aug 2023 · Dublin, Ireland",
+        "Built an end-to-end ETL pipeline from Azure DevOps APIs using Python and dbt, reducing backlog analysis time by 75%.",
+        "Delivered real-time Power BI dashboards for engineering leads and senior managers; improved sprint planning accuracy by 25% across multiple Scrum teams.",
+        "Engineered an end-to-end analytics solution for WayLoader using Microsoft Fabric (Data Factory, Lakehouse, Pipelines), improving data freshness by 70%, cutting manual reporting time by 50%, and boosting product sales visibility.",
+        "Designed a real-time analytics platform on Power BI for construction project risks, resources, and procurement — about 25% faster delivery and 30% better resource utilization.",
+      ].join("\n"),
+    },
+    {
+      id: "education",
+      title: "Resume — Academic profile",
+      text: [
+        "Master’s in Computer Science (2023–2025) — University of Eastern Finland, Joensuu, Finland. Full-time on-site.",
+        "Research thesis: Hybrid Deep Learning Model for Diabetes Early Detection.",
+        "Main courses: Machine Learning, Deep Learning, Applied Image Processing, Natural Language Processing.",
+        "Bachelor’s in Computer Science (2017–2021) — COMSATS University Islamabad, Islamabad, Pakistan. Full-time on-site.",
+        "Final-year project: POS system with dynamic functionality in PHP and SQL, tested with local retailers.",
+        "Main courses: Data Warehousing & Data Mining, Artificial Intelligence, Database Systems, Design Principles, Web & Intranet.",
+      ].join("\n"),
+    },
+  ],
+} as const;
+
+export const about = [
+  `I'm ${site.name}, a data engineer in ${site.location} with about five years of project experience. The work starts with a decision someone has to make on Monday: which operational trend matters, which sprint is slipping, which product is actually selling.`,
+  "Then the data has to get boring. One grain, validated loads, a pipeline that can restart. Python, Spark, SQL, dbt, or Fabric — whichever already fits the stack. The report only ships after that.",
+] as const;
 
 export type Metric = {
   value: string;
@@ -108,7 +202,7 @@ export const projects: Project[] = [
     problem:
       "Earlier detection needs a model shaped around the signals in the data, not a single architecture chosen by habit.",
     approach:
-      "Researched and built a hybrid deep learning model for early diabetes detection as the master’s thesis, grounded in coursework on machine learning, deep learning, image processing, and natural language processing.",
+      "Researched and built a hybrid deep learning model for early diabetes detection as the master’s thesis, grounded in coursework on machine learning, deep learning, applied image processing, and natural language processing.",
     outcome:
       "A research model focused on earlier detection, kept separate from the warehouse and dashboard work so each has a clear job.",
     stack: ["Python", "Deep learning", "Machine learning"],
@@ -117,7 +211,7 @@ export const projects: Project[] = [
 ];
 
 export const stats = [
-  { value: "4 yrs", label: "Project work in data and AI" },
+  { value: "5 yrs", label: "Data engineering project experience" },
   {
     value: String(projects.length),
     label: "Selected projects",
@@ -153,20 +247,31 @@ export const services = [
   },
   {
     title: "Handover",
-    text: "dbt, Git, and Azure DevOps so the next person can see how a number was made.",
+    text: "dbt, Git, Azure DevOps, and CI/CD so the next person can see how a number was made.",
   },
 ] as const;
 
 export const experience = [
   {
+    org: "Smart Solutions Technologies (SST)",
+    role: "Data Engineer",
+    period: "May 2025 – Aug 2026",
+    place: "Remote · Melbourne, Australia",
+    text: "Built and maintained ETL/ELT pipelines in Python and SQL across multiple sources for reporting and analysis. Added cleaning, transformation, and validation to improve data quality and consistency. Ran SQL-based analysis and prepared reports on operational trends and performance metrics.",
+  },
+  {
     org: "University of Eastern Finland",
+    role: "Research Fellow Assistant · Data Engineer",
+    period: "Nov 2022 – Mar 2025",
     place: "Joensuu, Finland",
-    text: "Pipelines and a warehouse for student enrollment, performance, and feedback — more than 5 million records — plus Power BI for retention, graduation, and dropout risk. Python checks and Spark checkpointing so a long job can restart without corrupting a load.",
+    text: "Python, PySpark, and SQL pipelines over more than 5 million student records, cutting manual processing by about 60%. Dimensional models and Power BI for retention and dropout risk — warehouse queries about 45% faster and reporting from hours to minutes. Automated data-quality checks and anomaly detection, reducing investigation time by about 40%.",
   },
   {
     org: "GagaMuller",
+    role: "Data Engineer",
+    period: "Sep 2022 – Aug 2023",
     place: "Dublin, Ireland",
-    text: "Analytics for engineering delivery, a Microsoft Fabric lakehouse for WayLoader, and live Power BI for construction risk, resources, and procurement.",
+    text: "End-to-end ETL from Azure DevOps APIs with Python and dbt, cutting backlog analysis time by about 75%, plus real-time Power BI for engineering leads. Microsoft Fabric lakehouse and pipelines for WayLoader product sales. Live Power BI for construction risk, resources, and procurement — about 25% faster delivery and 30% better resource use.",
   },
 ] as const;
 
@@ -179,19 +284,33 @@ export const stackGroups = [
     title: "Platforms",
     items: [
       "Microsoft Fabric",
-      "Databricks",
       "Azure Data Factory",
-      "Apache Airflow",
+      "Databricks",
       "Apache Spark",
+      "Apache Airflow",
+      "Google BigQuery (basic)",
     ],
   },
   {
     title: "Modeling & BI",
-    items: ["dbt", "Dimensional modeling", "Power BI", "Tableau"],
+    items: [
+      "dbt",
+      "Dimensional modeling",
+      "Medallion architecture",
+      "Power BI",
+      "Tableau",
+    ],
   },
   {
     title: "Practice",
-    items: ["Git", "Azure DevOps", "ETL / ELT", "Anomaly checks"],
+    items: [
+      "ETL / ELT",
+      "Data quality",
+      "Git",
+      "Azure DevOps",
+      "CI/CD",
+      "Agile",
+    ],
   },
 ] as const;
 
@@ -199,16 +318,16 @@ export const education = [
   {
     credential: "Master’s in Computer Science",
     school: "University of Eastern Finland",
-    place: "Joensuu, Finland",
+    place: "Joensuu, Finland · 2023–2025",
     detail:
-      "Thesis: hybrid deep learning model for early diabetes detection. Courses included machine learning, deep learning, image processing, and natural language processing.",
+      "Full-time on-site. Thesis: hybrid deep learning model for early diabetes detection. Main courses: machine learning, deep learning, applied image processing, and natural language processing.",
   },
   {
     credential: "Bachelor’s in Computer Science",
     school: "COMSATS University Islamabad",
-    place: "Islamabad, Pakistan",
+    place: "Islamabad, Pakistan · 2017–2021",
     detail:
-      "Final project: a point-of-sale system in PHP and SQL, tested with local retailers. Courses included data warehousing, data mining, and artificial intelligence.",
+      "Full-time on-site. Final-year project: POS system with dynamic functionality in PHP and SQL, tested with local retailers. Main courses: data warehousing and data mining, artificial intelligence, database systems, design principles, and web and intranet.",
   },
 ] as const;
 
@@ -216,7 +335,7 @@ export const faqs = [
   {
     question: "What kind of work do you take on?",
     answer:
-      "Pipelines, warehouses, BI, and applied machine learning when the decision needs a model. Education, construction, and product data are the domains I have shipped in.",
+      "Pipelines, warehouses, BI, and applied machine learning when the decision needs a model. Education, construction, retail, and product analytics are the domains I have shipped in.",
   },
   {
     question: "Can you own both the pipeline and the report?",
@@ -231,7 +350,7 @@ export const faqs = [
   {
     question: "What do you work with?",
     answer:
-      "Python, PySpark, SQL, dbt, Microsoft Fabric, Databricks, Azure Data Factory, Airflow, Power BI, Tableau, Git, and Azure DevOps.",
+      "Python, PySpark, SQL, ETL/ELT, dbt, dimensional modeling, data quality, Microsoft Fabric, Databricks, Azure Data Factory, Spark, Airflow, medallion architecture, Power BI, Tableau, BigQuery (basic), Git, Azure DevOps, CI/CD, Docker, and Agile delivery.",
   },
   {
     question: "Are you available?",

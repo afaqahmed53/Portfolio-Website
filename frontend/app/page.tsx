@@ -3,6 +3,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { SectionHeading } from "@/components/SectionHeading";
 import {
+  about,
   education,
   experience,
   projects,
@@ -16,14 +17,14 @@ export default function Home() {
   return (
     <div>
       <section className="border-b border-line">
-        <div className="mx-auto flex min-h-[calc(100svh-7.25rem)] max-w-6xl flex-col justify-center px-6 py-12">
-          <p className="font-mono text-[11px] tracking-[0.22em] text-forest uppercase">
+        <div className="mx-auto flex min-h-[calc(100svh-5.5rem)] max-w-6xl flex-col justify-center px-6 py-16 sm:py-20 md:min-h-[calc(100svh-4.5rem)] md:py-24">
+          <p className="font-mono text-[11px] tracking-[0.22em] text-forest uppercase sm:text-xs">
             {site.tagline}
           </p>
-          <h1 className="mt-4 max-w-4xl font-[family-name:var(--font-display)] text-4xl leading-[1.05] font-medium tracking-tight sm:text-5xl">
+          <h1 className="mt-5 max-w-4xl font-[family-name:var(--font-display)] text-4xl leading-[1.05] font-medium tracking-tight sm:mt-6 sm:text-5xl md:text-[3.25rem] md:leading-[1.04]">
             {site.headline}
           </h1>
-          <p className="mt-6 max-w-2xl text-base leading-7 text-muted sm:text-lg">
+          <p className="mt-8 max-w-2xl text-base leading-7 text-muted sm:mt-10 sm:text-lg sm:leading-8">
             {site.bio}
           </p>
         </div>
@@ -131,7 +132,13 @@ export default function Home() {
               >
                 <div>
                   <h3 className="text-xl font-medium">{job.org}</h3>
-                  <p className="mt-1 font-mono text-xs text-muted">{job.place}</p>
+                  {"role" in job && job.role ? (
+                    <p className="mt-1 text-sm text-forest">{job.role}</p>
+                  ) : null}
+                  <p className="mt-1 font-mono text-xs text-muted">
+                    {"period" in job && job.period ? `${job.period} · ` : ""}
+                    {job.place}
+                  </p>
                 </div>
                 <p className="leading-7 text-muted">{job.text}</p>
               </li>
@@ -170,18 +177,11 @@ export default function Home() {
           <SectionHeading title="About" label="Who you're hiring" />
           <div className="mt-8 grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
             <div className="space-y-5 text-lg leading-8">
-              <p>
-                I&apos;m {site.name}, a data and AI engineer in {site.location}.
-                The work starts with a decision someone has to make on Monday:
-                who might leave a program, which sprint is slipping, which
-                product is actually selling.
-              </p>
-              <p className="text-muted">
-                Then the data has to get boring. One grain, a tested model, a
-                pipeline that can restart. Python, Spark, SQL, dbt, or Fabric —
-                whichever already fits the stack. The report only ships after
-                that.
-              </p>
+              {about.map((paragraph, index) => (
+                <p key={index} className={index === 1 ? "text-muted" : undefined}>
+                  {paragraph}
+                </p>
+              ))}
             </div>
             <aside className="border border-line bg-white p-6 shadow-[0_16px_40px_rgba(20,20,20,0.06)]">
               <p className="font-mono text-[10px] tracking-[0.18em] text-muted uppercase">
