@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Newsreader } from "next/font/google";
+import { Chatbot } from "@/components/chatbot/Chatbot";
 import { ProfileHeader } from "@/components/ProfileHeader";
 import { QuickActions } from "@/components/QuickActions";
 import { site } from "@/lib/content";
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <QuickActions />
+        <Chatbot />
       </body>
     </html>
   );

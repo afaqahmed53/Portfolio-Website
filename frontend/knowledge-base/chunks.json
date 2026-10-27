@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-10-27T21:43:02.522Z",
+    "sourceFile": "knowledge-base/site-data.json",
+    "chunkCount": 38
+  },
+  "chunks": [
+    {
+      "id": "profile",
+      "section": "profile",
+      "title": "Afaq Ahmed",
+      "text": "Afaq Ahmed — Experienced Data Engineer\nData engineering for teams that need a number they can defend.\nETL/ELT pipelines, warehouses, and Power BI across education, construction, and retail — with applied machine learning from master’s research. Based in Espoo.\nResume summary: Dedicated and results-driven analytics professional with experience in the Education, construction, and Retail industries, seeking a role to leverage analytical skills and contribute to the organization’s growth and success by developing pipelines and insightful reporting.\nLocation: Espoo, Finland\nTimezone: EET · UTC+2 · remote-friendly\nEmail: iafaqhere1@gmail.com\nPhone: +358 41 7235431",
+      "metadata": {
+        "type": "profile"
+      }
+    },
+    {
+      "id": "cv-overview",
+      "section": "cv",
+      "title": "CV / resume (site content)",
+      "text": "Downloadable resume: /resume.pdf (Afaq-Ahmed-Resume.pdf).\nSections on this CV: profile and contact; quick summary; skillset; professional experience; academic profile.\nResume PDF synced as plain text (Afaq Ahmed - Resume-1.pdf, last updated September 2026): Resume — profile & contact; Resume — Quick Summary; Resume — Skillset; Resume — Smart Solutions Technologies (SST); Resume — University of Eastern Finland; Resume — GagaMuller; Resume — Academic profile.\nSite sections also in the knowledge base: career highlights; services; work experience; selected projects; education; technical stack; availability and FAQs.\nExperience: Smart Solutions Technologies (SST) (Remote · Melbourne, Australia); University of Eastern Finland (Joensuu, Finland); GagaMuller (Dublin, Ireland).\nEducation: Master’s in Computer Science — University of Eastern Finland; Bachelor’s in Computer Science — COMSATS University Islamabad.\nProjects: Student data platform; Engineering delivery analytics; WayLoader on Microsoft Fabric; Early diabetes detection.\nStack groups: Languages & compute, Platforms, Modeling & BI, Practice.\nCertifications: none listed in site content.\nSpoken languages: none listed in site content.",
+      "metadata": {
+        "type": "cv-overview"
+      }
+    },
+    {
+      "id": "resume-pdf-profile",
+      "section": "cv",
+      "title": "Resume — profile & contact",
+      "text": "Afaq Ahmed — Experienced Data Engineer\nEspoo, Finland\niafaqhere1@gmail.com\n+358 41 7235431\nLinkedIn profile on resume\nLast updated: September 2026",
+      "metadata": {
+        "type": "resume-pdf",
+        "source": "Afaq Ahmed - Resume-1.pdf",
+        "sectionId": "profile"
+      }
+    },
+    {
+      "id": "resume-pdf-quick-summary",
+      "section": "cv",
+      "title": "Resume — Quick Summary",
+      "text": "Dedicated and results-driven analytics professional with experience in the Education, construction, and Retail industries, seeking a role to leverage analytical skills and contribute to the organization’s growth and success by developing pipelines and insightful reporting.",
+      "metadata": {
+        "type": "resume-pdf",
+        "source": "Afaq Ahmed - Resume-1.pdf",
+        "sectionId": "quick-summary"
+      }
+    },
+    {
+      "id": "resume-pdf-skillset",
+      "section": "cv",
+      "title": "Resume — Skillset",
+      "text": "Technical skills: Data Engineering (5 years of project experience), Python, PySpark, SQL, ETL/ELT, Dimensional Data Modeling, dbt, Data Quality, Microsoft Fabric, Azure Data Factory, Databricks, Apache Spark, Apache Airflow, Medallion Architecture, Power BI, Tableau, Google BigQuery (basic familiarity), Git, Azure DevOps, CI/CD, Docker, Agile Methodology.",
+      "metadata": {
+        "type": "resume-pdf",
+        "source": "Afaq Ahmed - Resume-1.pdf",
+        "sectionId": "skillset"
+      }
+    },
+    {
+      "id": "resume-pdf-experience-sst",
+      "section": "cv",
+      "title": "Resume — Smart Solutions Technologies (SST)",
+      "text": "Smart Solutions Technologies (SST) — Data Engineer\nMay 2025 – Aug 2026 · Remote · Melbourne, Australia\nDeveloped and maintained ETL/ELT pipelines using Python and SQL to integrate data from multiple sources and prepare reliable datasets for reporting and analysis.\nImplemented data cleaning, transformation, and validation processes to improve data quality, consistency, and reliability across data workflows.\nConducted SQL-based data analysis and prepared reports to identify operational trends, monitor performance metrics, and support data-driven business decisions.",
+      "metadata": {
+        "type": "resume-pdf",
+        "source": "Afaq Ahmed - Resume-1.pdf",
+        "sectionId": "experience-sst"
+      }
+    },
+    {
+      "id": "resume-pdf-experience-uef",
+      "section": "cv",
+      "title": "Resume — University of Eastern Finland",
+      "text": "University of Eastern Finland — Research Fellow Assistant · Data Engineer\nNov 2022 – Mar 2025 · Joensuu, Finland\nDeveloped Python, PySpark, and SQL data pipelines processing 5M+ student records, reducing manual processing time by 60%.\nDesigned dimensional data models and Power BI dashboards, improving query performance by 45% and reducing reporting time from hours to minutes.\nBuilt automated data-quality checks and anomaly detection scripts, reducing investigation time by 40% and improving pipeline reliability.",
+      "metadata": {
+        "type": "resume-pdf",
+        "source": "Afaq Ahmed - Resume-1.pdf",
+        "sectionId": "experience-uef"
+      }
+    },
+    {
+      "id": "resume-pdf-experience-gagamuller",
+      "section": "cv",
+      "title": "Resume — GagaMuller",
+      "text": "GagaMuller — Data Engineer\nSep 2022 – Aug 2023 · Dublin, Ireland\nBuilt an end-to-end ETL pipeline from Azure DevOps APIs using Python and dbt, reducing backlog analysis time by 75%.\nDelivered real-time Power BI dashboards for engineering leads and senior managers; improved sprint planning accuracy by 25% across multiple Scrum teams.\nEngineered an end-to-end analytics solution for WayLoader using Microsoft Fabric (Data Factory, Lakehouse, Pipelines), improving data freshness by 70%, cutting manual reporting time by 50%, and boosting product sales visibility.\nDesigned a real-time analytics platform on Power BI for construction project risks, resources, and procurement — about 25% faster delivery and 30% better resource utilization.",
+      "metadata": {
+        "type": "resume-pdf",
+        "source": "Afaq Ahmed - Resume-1.pdf",
+        "sectionId": "experience-gagamuller"
+      }
+    },
+    {
+      "id": "resume-pdf-education",
+      "section": "cv",
+      "title": "Resume — Academic profile",
+      "text": "Master’s in Computer Science (2023–2025) — University of Eastern Finland, Joensuu, Finland. Full-time on-site.\nResearch thesis: Hybrid Deep Learning Model for Diabetes Early Detection.\nMain courses: Machine Learning, Deep Learning, Applied Image Processing, Natural Language Processing.\nBachelor’s in Computer Science (2017–2021) — COMSATS University Islamabad, Islamabad, Pakistan. Full-time on-site.\nFinal-year project: POS system with dynamic functionality in PHP and SQL, tested with local retailers.\nMain courses: Data Warehousing & Data Mining, Artificial Intelligence, Database Systems, Design Principles, Web & Intranet.",
+      "metadata": {
+        "type": "resume-pdf",
+        "source": "Afaq Ahmed - Resume-1.pdf",
+        "sectionId": "education"
+      }
+    },
+    {
+      "id": "about",
+      "section": "about",
+      "title": "About Afaq",
+      "text": "I'm Afaq Ahmed, a data engineer in Espoo, Finland with about five years of project experience. The work starts with a decision someone has to make on Monday: which operational trend matters, which sprint is slipping, which product is actually selling.\n\nThen the data has to get boring. One grain, validated loads, a pipeline that can restart. Python, Spark, SQL, dbt, or Fabric — whichever already fits the stack. The report only ships after that.",
+      "metadata": {
+        "type": "about"
+      }
+    },
+    {
+      "id": "stat-data-engineering-project-experience",
+      "section": "stats",
+      "title": "Data engineering project experience",
+      "text": "Data engineering project experience: 5 yrs",
+      "metadata": {
+        "type": "stat"
+      }
+    },
+    {
+      "id": "stat-selected-projects",
+      "section": "stats",
+      "title": "Selected projects",
+      "text": "Selected projects: 4",
+      "metadata": {
+        "type": "stat"
+      }
+    },
+    {
+      "id": "stat-records-in-the-largest-warehouse",
+      "section": "stats",
+      "title": "Records in the largest warehouse",
+      "text": "Records in the largest warehouse: 5M+",
+      "metadata": {
+        "type": "stat"
+      }
+    },
+    {
+      "id": "stat-pipelines-through-models-and-dashboards",
+      "section": "stats",
+      "title": "Pipelines through models and dashboards",
+      "text": "Pipelines through models and dashboards: Data + ML",
+      "metadata": {
+        "type": "stat"
+      }
+    },
+    {
+      "id": "service-pipelines",
+      "section": "services",
+      "title": "Pipelines",
+      "text": "Pipelines\nETL and ELT in Python, PySpark, and SQL, with retries so a long job can restart cleanly.",
+      "metadata": {
+        "type": "service"
+      }
+    },
+    {
+      "id": "service-warehouses",
+      "section": "services",
+      "title": "Warehouses",
+      "text": "Warehouses\nDimensional models and medallion layouts on Fabric, Databricks, and a warehouse people can query.",
+      "metadata": {
+        "type": "service"
+      }
+    },
+    {
+      "id": "service-reporting",
+      "section": "services",
+      "title": "Reporting",
+      "text": "Reporting\nPower BI and Tableau for retention, delivery, sales, and project risk — one definition per metric.",
+      "metadata": {
+        "type": "service"
+      }
+    },
+    {
+      "id": "service-applied-ml",
+      "section": "services",
+      "title": "Applied ML",
+      "text": "Applied ML\nAnomaly checks in production data, and research on deep learning for early diabetes detection.",
+      "metadata": {
+        "type": "service"
+      }
+    },
+    {
+      "id": "service-platforms",
+      "section": "services",
+      "title": "Platforms",
+      "text": "Platforms\nMicrosoft Fabric, Azure Data Factory, Databricks, and Airflow when the data has to stay fresh.",
+      "metadata": {
+        "type": "service"
+      }
+    },
+    {
+      "id": "service-handover",
+      "section": "services",
+      "title": "Handover",
+      "text": "Handover\ndbt, Git, Azure DevOps, and CI/CD so the next person can see how a number was made.",
+      "metadata": {
+        "type": "service"
+      }
+    },
+    {
+      "id": "project-student-data-platform",
+      "section": "projects",
+      "title": "Student data platform",
+      "text": "Student data platform (Pipelines & analytics)\nContext: University of Eastern Finland\nPipelines, a dimensional warehouse, and Power BI for enrollment, performance, and feedback.\nProblem: Academic reporting depended on manual work across enrollment, grades, and feedback. Staff waited hours for a report, and odd records — a sudden GPA jump, a missing enrollment id — took too long to find.\nApproach: Built ETL and ELT jobs in Python, PySpark, and SQL over more than 5 million records. Modeled student, faculty, and course data in a warehouse, published Power BI for retention, graduation, dropout risk, and workload, and added Python checks plus checkpointing so Spark jobs could restart without corrupting a load.\nOutcome: Manual processing time fell by 60%. Warehouse queries ran about 45% faster, and report generation moved from hours to minutes. Dashboards made the figures easier for academic staff to reach, and anomaly checks cut investigation time by about 40%.\nStack: Python, PySpark, SQL, Power BI\nTags: Python, PySpark, SQL, Power BI\nMetrics: 60% less manual processing; 45% faster warehouse queries; 40% faster anomaly checks",
+      "metadata": {
+        "type": "project",
+        "slug": "student-data-platform",
+        "category": "Pipelines & analytics"
+      }
+    },
+    {
+      "id": "project-engineering-delivery",
+      "section": "projects",
+      "title": "Engineering delivery analytics",
+      "text": "Engineering delivery analytics (dbt & Azure DevOps)\nContext: GagaMuller · Dublin\nA pipeline and live Power BI so leads could see backlog, sprint risk, and capacity without a manual export.\nProblem: Sprint planning sat on exported boards. Engineering leads and managers could not see backlog health, project risk, or resource load in one place.\nApproach: Pulled Azure DevOps APIs into an end-to-end pipeline with Python and dbt, then built Power BI that stayed current for leads and senior managers. A second view covered construction projects: risk, resources, and procurement on the same reporting habit.\nOutcome: Backlog analysis time dropped by about 75%. Sprint planning accuracy improved by about 25% across Scrum teams. On the construction work, delivery moved about 25% faster and resource use improved by about 30%.\nStack: Python, dbt, Azure DevOps, Power BI\nTags: Python, dbt, Azure DevOps, Power BI\nMetrics: 75% less time on backlog analysis; 25% better sprint planning accuracy; 30% better resource use",
+      "metadata": {
+        "type": "project",
+        "slug": "engineering-delivery",
+        "category": "dbt & Azure DevOps"
+      }
+    },
+    {
+      "id": "project-wayloader-fabric",
+      "section": "projects",
+      "title": "WayLoader on Microsoft Fabric",
+      "text": "WayLoader on Microsoft Fabric (Lakehouse)\nContext: GagaMuller · WayLoader\nA lakehouse and pipelines so product sales reporting was no longer a manual refresh.\nProblem: Sales and product reporting lagged the business. People assembled numbers by hand, so a decision often waited on a stale extract.\nApproach: Stood up Data Factory, a lakehouse, and pipelines in Microsoft Fabric, and shaped the data so Power BI could show product sales without a fresh spreadsheet each time.\nOutcome: Data was about 70% fresher. Manual reporting time fell by about 50%, and product sales were visible to the people who needed them.\nStack: Microsoft Fabric, Data Factory, Lakehouse, Power BI\nTags: Microsoft Fabric, Data Factory, Power BI\nMetrics: 70% fresher product data; 50% less manual reporting",
+      "metadata": {
+        "type": "project",
+        "slug": "wayloader-fabric",
+        "category": "Lakehouse"
+      }
+    },
+    {
+      "id": "project-diabetes-detection",
+      "section": "projects",
+      "title": "Early diabetes detection",
+      "text": "Early diabetes detection (Applied research)\nContext: Master’s thesis · University of Eastern Finland\nA hybrid deep learning model aimed at catching diabetes earlier, next to the production analytics work.\nProblem: Earlier detection needs a model shaped around the signals in the data, not a single architecture chosen by habit.\nApproach: Researched and built a hybrid deep learning model for early diabetes detection as the master’s thesis, grounded in coursework on machine learning, deep learning, applied image processing, and natural language processing.\nOutcome: A research model focused on earlier detection, kept separate from the warehouse and dashboard work so each has a clear job.\nStack: Python, Deep learning, Machine learning\nTags: Deep learning, Python, Research",
+      "metadata": {
+        "type": "project",
+        "slug": "diabetes-detection",
+        "category": "Applied research"
+      }
+    },
+    {
+      "id": "experience-0",
+      "section": "experience",
+      "title": "Smart Solutions Technologies (SST)",
+      "text": "Smart Solutions Technologies (SST)\nData Engineer\nMay 2025 – Aug 2026\nRemote · Melbourne, Australia\nBuilt and maintained ETL/ELT pipelines in Python and SQL across multiple sources for reporting and analysis. Added cleaning, transformation, and validation to improve data quality and consistency. Ran SQL-based analysis and prepared reports on operational trends and performance metrics.",
+      "metadata": {
+        "type": "experience",
+        "org": "Smart Solutions Technologies (SST)"
+      }
+    },
+    {
+      "id": "experience-1",
+      "section": "experience",
+      "title": "University of Eastern Finland",
+      "text": "University of Eastern Finland\nResearch Fellow Assistant · Data Engineer\nNov 2022 – Mar 2025\nJoensuu, Finland\nPython, PySpark, and SQL pipelines over more than 5 million student records, cutting manual processing by about 60%. Dimensional models and Power BI for retention and dropout risk — warehouse queries about 45% faster and reporting from hours to minutes. Automated data-quality checks and anomaly detection, reducing investigation time by about 40%.",
+      "metadata": {
+        "type": "experience",
+        "org": "University of Eastern Finland"
+      }
+    },
+    {
+      "id": "experience-2",
+      "section": "experience",
+      "title": "GagaMuller",
+      "text": "GagaMuller\nData Engineer\nSep 2022 – Aug 2023\nDublin, Ireland\nEnd-to-end ETL from Azure DevOps APIs with Python and dbt, cutting backlog analysis time by about 75%, plus real-time Power BI for engineering leads. Microsoft Fabric lakehouse and pipelines for WayLoader product sales. Live Power BI for construction risk, resources, and procurement — about 25% faster delivery and 30% better resource use.",
+      "metadata": {
+        "type": "experience",
+        "org": "GagaMuller"
+      }
+    },
+    {
+      "id": "stack-languages-&-compute",
+      "section": "stack",
+      "title": "Languages & compute",
+      "text": "Languages & compute: Python, PySpark, SQL, Docker",
+      "metadata": {
+        "type": "stack"
+      }
+    },
+    {
+      "id": "stack-platforms",
+      "section": "stack",
+      "title": "Platforms",
+      "text": "Platforms: Microsoft Fabric, Azure Data Factory, Databricks, Apache Spark, Apache Airflow, Google BigQuery (basic)",
+      "metadata": {
+        "type": "stack"
+      }
+    },
+    {
+      "id": "stack-modeling-&-bi",
+      "section": "stack",
+      "title": "Modeling & BI",
+      "text": "Modeling & BI: dbt, Dimensional modeling, Medallion architecture, Power BI, Tableau",
+      "metadata": {
+        "type": "stack"
+      }
+    },
+    {
+      "id": "stack-practice",
+      "section": "stack",
+      "title": "Practice",
+      "text": "Practice: ETL / ELT, Data quality, Git, Azure DevOps, CI/CD, Agile",
+      "metadata": {
+        "type": "stack"
+      }
+    },
+    {
+      "id": "education-0",
+      "section": "education",
+      "title": "Master’s in Computer Science",
+      "text": "Master’s in Computer Science\nUniversity of Eastern Finland, Joensuu, Finland · 2023–2025\nFull-time on-site. Thesis: hybrid deep learning model for early diabetes detection. Main courses: machine learning, deep learning, applied image processing, and natural language processing.",
+      "metadata": {
+        "type": "education",
+        "school": "University of Eastern Finland"
+      }
+    },
+    {
+      "id": "education-1",
+      "section": "education",
+      "title": "Bachelor’s in Computer Science",
+      "text": "Bachelor’s in Computer Science\nCOMSATS University Islamabad, Islamabad, Pakistan · 2017–2021\nFull-time on-site. Final-year project: POS system with dynamic functionality in PHP and SQL, tested with local retailers. Main courses: data warehousing and data mining, artificial intelligence, database systems, design principles, and web and intranet.",
+      "metadata": {
+        "type": "education",
+        "school": "COMSATS University Islamabad"
+      }
+    },
+    {
+      "id": "faq-0",
+      "section": "faq",
+      "title": "What kind of work do you take on?",
+      "text": "Q: What kind of work do you take on?\nA: Pipelines, warehouses, BI, and applied machine learning when the decision needs a model. Education, construction, retail, and product analytics are the domains I have shipped in.",
+      "metadata": {
+        "type": "faq"
+      }
+    },
+    {
+      "id": "faq-1",
+      "section": "faq",
+      "title": "Can you own both the pipeline and the report?",
+      "text": "Q: Can you own both the pipeline and the report?\nA: Yes. The usual delivery is ingestion, a tested model, and Power BI or Tableau with one definition per metric.",
+      "metadata": {
+        "type": "faq"
+      }
+    },
+    {
+      "id": "faq-2",
+      "section": "faq",
+      "title": "Is this only batch analytics?",
+      "text": "Q: Is this only batch analytics?\nA: Most of the work is batch and warehouse-centric. I also pull APIs such as Azure DevOps, orchestrate with Airflow, and design for fresher data when the business is waiting on yesterday’s extract.",
+      "metadata": {
+        "type": "faq"
+      }
+    },
+    {
+      "id": "faq-3",
+      "section": "faq",
+      "title": "What do you work with?",
+      "text": "Q: What do you work with?\nA: Python, PySpark, SQL, ETL/ELT, dbt, dimensional modeling, data quality, Microsoft Fabric, Databricks, Azure Data Factory, Spark, Airflow, medallion architecture, Power BI, Tableau, BigQuery (basic), Git, Azure DevOps, CI/CD, Docker, and Agile delivery.",
+      "metadata": {
+        "type": "faq"
+      }
+    },
+    {
+      "id": "faq-4",
+      "section": "faq",
+      "title": "Are you available?",
+      "text": "Q: Are you available?\nA: Open to roles and project work from Finland and remote, EU-friendly hours. Send a short brief through the form or email.",
+      "metadata": {
+        "type": "faq"
+      }
+    }
+  ]
+}

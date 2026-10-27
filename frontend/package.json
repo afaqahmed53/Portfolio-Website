@@ -3,13 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "sync:data": "tsx scripts/sync-site-data.ts",
+    "dev": "npm run sync:data && next dev",
+    "build": "npm run sync:data && next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "next": "16.4.2",
+    "openai": "^7.45.1",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
@@ -21,6 +23,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.2",
     "tailwindcss": "^4",
+    "tsx": "^4.19.4",
     "typescript": "^5"
   }
 }
