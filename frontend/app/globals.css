@@ -195,6 +195,7 @@ textarea:focus-visible {
   box-shadow: 0 0 0 4px rgba(27, 74, 56, 0.12);
 }
 
+/* Floating assistant: fixed above the quick-action bar. */
 .chatbot-root {
   position: fixed;
   right: 1rem;
